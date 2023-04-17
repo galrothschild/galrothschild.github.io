@@ -6,13 +6,13 @@
     padding: 0;
     font-family: 'Varela Round', sans-serif;
     color: #fff;
-    text-align: center
+    text-align: center;
 }
 
 .container,
 body,
 html {
-    height: 100%
+    height: 100%;
 }
 
 .container {
@@ -21,18 +21,18 @@ html {
     display: flex;
     flex-direction: column;
     padding: 15%;
-    gap: 20px
+    gap: 20px;
 }
 
 h1 {
     font-family: Satisfy, cursive;
     text-shadow: 0 0 36px #383838;
     font-size: 4rem;
-    font-weight: 400
+    font-weight: 400;
 }
 
 h2 {
-    font-weight: 400
+    font-weight: 400;
 }
 
 form {
@@ -40,7 +40,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding-top: 40px
+    padding-top: 40px;
 }
 
 .form-control {
@@ -48,14 +48,14 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 300px
+    max-width: 300px;
 }
 
 .form-control>input {
     width: 100%;
     border: 2px solid #fff;
     background-color: #8d8d8d0c;
-    line-height: 24px
+    line-height: 24px;
 }
 
 form>button {
@@ -67,25 +67,25 @@ form>button {
     white-space: nowrap;
     margin-top: 20px;
     width: 70%;
-    max-width: 300px
+    max-width: 300px;
 }
 
 @media only screen and (min-width:800px) {
     .container {
-        justify-content: center
+        justify-content: center;
     }
 
     h1 {
-        font-size: 7rem
+        font-size: 7rem;
     }
 
     form {
         flex-direction: row;
         justify-content: center;
-        align-items: flex-end
+        align-items: flex-end;
     }
 
     form>button {
-        width: auto
+        width: auto;
     }
 }
