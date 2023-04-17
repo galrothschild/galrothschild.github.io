@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gal Rothschild's portfolio">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="portfolio-style.css">
+    <title>Gal's Portfolio</title>
+    <script>
+        function switchLanguage() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            setTimeout(() => {
+                if (!!document.getElementById('container').classList.contains('eng') || !!document.getElementById('container').classList.contains('heb')) {
+                    document.getElementById('container').classList.toggle('eng');
+                    document.getElementById('container').classList.toggle('heb');
+                }
+                else if (!document.getElementById('container').classList.contains('eng')) {
+                    document.getElementById('container').classList.toggle('eng');
+                }
+            }, 300);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="side-eng" dir="ltr"><!-- Header and Navbar of the page -->
+            <header class="page-header">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="name">Gal Rothschild</div>
+                <img src="../assets/portfolio's images/Wave.png" alt="Image of a wave">
+                <button onclick="switchLanguage()">עברית</button>
+            </header>
+            <main>
+                <!-- Header of the main content -->
+                <header class=" main-header">
+                    <h1>Personal Portfolio</h1>
+                    <p>This is my first portfolio</p>
+                </header>
+                <div class="technologies">
+                    <ul>
+                        <li><img src="../assets/portfolio's images/technologies/node.png" alt="Node JS"></li>
+                        <li><img src="../assets/portfolio's images/technologies/react.png" alt="React"></li>
+                        <li><img src="../assets/portfolio's images/technologies/api.png" alt="API"></li>
+                        <li><img src="../assets/portfolio's images/technologies/typescript.png" alt="TypeScript"></li>
+                        <li><img src="../assets/portfolio's images/technologies/es6.png" alt="ES6"></li>
+                        <li><img src="../assets/portfolio's images/technologies/oop.png" alt="OOP"></li>
+                        <li><img src="../assets/portfolio's images/technologies/javascript.png" alt="javascript"></li>
+                        <li><img src="../assets/portfolio's images/technologies/scss.png" alt="scss"></li>
+                        <li><img src="../assets/portfolio's images/technologies/bootstrap.png" alt="bootstrap"></li>
+                        <li><img src="../assets/portfolio's images/technologies/css.png" alt="css"></li>
+                        <li><img src="../assets/portfolio's images/technologies/html.png" alt="html"></li>
+                    </ul>
+                </div>
+                <section class="about">
+                    <article class="about-me">
+                        <img src="../assets/portfolio's images/profile.jpg" alt="Profile Picture">
+                        <div>
+                            <h2>About me</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ab natus esse voluptatum
+                                labore a atque inventore mollitia nemo sed officia, temporibus harum adipisci provident
+                                sequi, nostrum saepe optio odio.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit doloribus totam
+                                ducimus officia neque.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit doloribus totam
+                                ducimus officia neque.</p>
+                            <p>lorem25Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit
+                                doloribus totam ducimus officia neque.</p>
+                        </div>
+                    </article>
+                    <article class="cv">
+                        <img src="../assets/portfolio's images/pdf.png" alt="Logo of PDF">
+                        <div class="cv-inner">
+                            <h2>Download my CV</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nostrum inventore enim
+                                perferendis assumenda. Nobis!</p>
+                            <button id="download-cv" aria-label="Download CV"> <span>Download PDF</span> <img
+                                    src="../assets/icons/cloud-download.png" alt="Download" aria-hidden="true"></button>
+                        </div>
+                    </article>
+                </section>
+                <section class="gallery">
+                    <h2>Chosen Projects</h2>
+                    <div class="gallery-cards">
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage1.png" alt="landing page 2">
+                            <h3>Project Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
+                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <button>Go to the project</button>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage2.png" alt="landing page 2">
+                            <h3>Project Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
+                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <button>Go to the project</button>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage3.png" alt="landing page 3">
+                            <h3>Project Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
+                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <button>Go to the project</button>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage4.png" alt="landing page 4">
+                            <h3>Project Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
+                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <button>Go to the project</button>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage5.png" alt="landing page 5">
+                            <h3>Project Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
+                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <button>Go to the project</button>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage6.png" alt="landing page 6">
+                            <h3>Project Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
+                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <button>Go to the project</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact">
+                    <h2>Contact</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores nobis at aliquam alias
+                        molestiae neque quasi. Nobis perferendis optio veniam commodi. Sapiente assumenda dignissimos
+                        ipsum pariatur ea accusamus aut cupiditate?</p>
+                    <form action="mailto:gal.rothschild@kla-tencor.com" method="post">
+                        <div class="form-control">
+                            <label for="fullName">Name</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="Name">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-control">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form-control">
+                            <label for="">Message</label>
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <div class="reflinks">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/icons/Facebook.png" alt="Facebook">
+                                    <div class="eng">#Bob</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/icons/LinkedIn.png" alt="LinkedIn">
+                                    <div class="eng">#Bob</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:0523309312">
+                                    <img src="../assets/icons/Phone number.png" alt="Phone number">
+                                    <div>052-3309312</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=972523309312">
+                                    <img src="../assets/icons/Chat.png" alt="Chat">
+                                    <div>052-3309312</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:gal.rothschildf@gmail.com">
+                                    <img src="../assets/icons/Email.png" alt="gal.rothschildf@gmail.com">
+                                    <div class="eng">gal.rothschildf@gmail.com</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/icons/Location.png" alt="Location">
+                                    <div>Afula</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="credits">
+                    <div>All rights reserved</div>
+                    <div>Gal Rothschild 2023</div>
+                </div>
+            </footer>
+        </div>
+        <div class="side-heb" dir="rtl">
+            <!-- Header and Navbar of the page -->
+            <header class="page-header">
+                <nav>
+                    <ul>
+                        <li><a href="#">ראשי</a></li>
+                        <li><a href="#">אודות</a></li>
+                        <li><a href="#">גלריה</a></li>
+                        <li><a href="#">צור קשר</a></li>
+                    </ul>
+                </nav>
+                <div class="name">Gal Rothschild</div>
+                <img src="../assets/portfolio's images/Wave.png" alt="Image of a wave">
+                <button onclick="switchLanguage()">English</button>
+
+            </header>
+            <main>
+                <!-- Header of the main content -->
+                <header class="main-header">
+                    <h1>תיק עבודות אישי</h1>
+                    <p> זהו תיק העבודות הראשון שלי בלה בלה בלה בלה לבשלדיחכלחישדךגח לשדחגך</p>
+                </header>
+                <div class="technologies">
+                    <ul>
+                        <li><img src="../assets/portfolio's images/technologies/node.png" alt="Node JS"></li>
+                        <li><img src="../assets/portfolio's images/technologies/react.png" alt="React"></li>
+                        <li><img src="../assets/portfolio's images/technologies/api.png" alt="API"></li>
+                        <li><img src="../assets/portfolio's images/technologies/typescript.png" alt="TypeScript"></li>
+                        <li><img src="../assets/portfolio's images/technologies/es6.png" alt="ES6"></li>
+                        <li><img src="../assets/portfolio's images/technologies/oop.png" alt="OOP"></li>
+                        <li><img src="../assets/portfolio's images/technologies/javascript.png" alt="javascript"></li>
+                        <li><img src="../assets/portfolio's images/technologies/scss.png" alt="scss"></li>
+                        <li><img src="../assets/portfolio's images/technologies/bootstrap.png" alt="bootstrap"></li>
+                        <li><img src="../assets/portfolio's images/technologies/css.png" alt="css"></li>
+                        <li><img src="../assets/portfolio's images/technologies/html.png" alt="html"></li>
+                    </ul>
+                </div>
+                <section class="about">
+                    <article class="about-me">
+                        <img src="../assets/portfolio's images/profile.jpg" alt="Profile Picture">
+                        <div>
+                            <h2>קצת עלי</h2>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס,
+                                אקווזמן
+                                קוואזי במר מודוף. אודיפו
+                                בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי
+                                לורם
+                                איפסום
+                                דולור סיט אמט,</p>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס,
+                                אקווזמן
+                                קוואזי במר מודוף.</p>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס,
+                                אקווזמן
+                                קוואזי במר מודוף.</p>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס,
+                                אקווזמן
+                                קוואזי במר מודוף. אודיפו
+                                בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח.</p>
+                        </div>
+                    </article>
+                    <article class="cv">
+                        <img src="../assets/portfolio's images/pdf.png" alt="Logo of PDF">
+                        <div class="cv-inner">
+                            <h2>להורדת קורות חיים</h2>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס,
+                                אקווזמן
+                            </p>
+                            <button id="download-cv" aria-label="Download CV"> <span>להורדת מסמך PDF</span> <img
+                                    src="../assets/icons/cloud-download.png" alt="Download" aria-hidden="true"></button>
+                        </div>
+                    </article>
+                </section>
+                <section class="gallery">
+                    <h2>עבודות נבחרות</h2>
+                    <div class="gallery-cards">
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage1.png" alt="landing page 2">
+                            <h3>Project Name</h3>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                                אדיפיסינג
+                                אלית. סת אלמנקום ניסי נון ניבאה.</p>
+                            <a href="../vacationLandingPage/vacation.html"><button>להורדת הפרוייקט</button></a>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage2.png" alt="landing page 2">
+                            <h3>Project Name</h3>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                                אדיפיסינג
+                                אלית. סת אלמנקום ניסי נון ניבאה.</p>
+                            <a href='../coffeeLandingPage/coffee.html'><button>להורדת הפרוייקט</button></a>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage3.png" alt="landing page 3">
+                            <h3>Project Name</h3>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                                אדיפיסינג
+                                אלית. סת אלמנקום ניסי נון ניבאה.</p>
+                            <a href="../hereNowLandingPage/hereNow.html"><button>להורדת הפרוייקט</button></a>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage4.png" alt="landing page 4">
+                            <h3>Project Name</h3>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                                אדיפיסינג
+                                אלית. סת אלמנקום ניסי נון ניבאה.</p>
+                            <a href="../forwardLandingPage/forward.html"><button>להורדת הפרוייקט</button></a>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage5.png" alt="landing page 5">
+                            <h3>Project Name</h3>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                                אדיפיסינג
+                                אלית. סת אלמנקום ניסי נון ניבאה.</p>
+                            <button>להורדת הפרוייקט</button>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/portfolio's images/landing pages/landingPage6.png" alt="landing page 6">
+                            <h3>Project Name</h3>
+                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                                אדיפיסינג
+                                אלית. סת אלמנקום ניסי נון ניבאה.</p>
+                            <a href="../chaserLandingPage/chaser.html"><button>להורדת הפרוייקט</button></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact">
+                    <h2>צור קשר</h2>
+                    <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                        אדיפיסינג
+                        אלית. סת אלמנקום ניסי נון ניבאה.</p>
+                    <form action="mailto:gal.rothschild@kla-tencor.com" method="post">
+                        <div class="form-control">
+                            <label for="fullName">שם</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="שם">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">אימייל</label>
+                            <input type="email" name="email" id="email" placeholder="אימייל">
+                        </div>
+                        <div class="form-control">
+                            <label for="tel">טלפון</label>
+                            <input type="tel" name="tel" id="tel" placeholder="טלפון">
+                        </div>
+                        <div class="form-control">
+                            <label for="">הודעה</label>
+                            <textarea name="message" id="message" placeholder="הודעה"></textarea>
+                        </div>
+                        <button type="submit">שליחה</button>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <div class="reflinks">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/icons/Facebook.png" alt="Facebook">
+                                    <div class="eng">#Bob</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/icons/LinkedIn.png" alt="LinkedIn">
+                                    <div class="eng">#Bob</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:0523309312">
+                                    <img src="../assets/icons/Phone number.png" alt="Phone number">
+                                    <div>052-3309312</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=972523309312">
+                                    <img src="../assets/icons/Chat.png" alt="Chat">
+                                    <div>052-3309312</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:gal.rothschildf@gmail.com">
+                                    <img src="../assets/icons/Email.png" alt="gal.rothschildf@gmail.com">
+                                    <div class="eng">gal.rothschildf@gmail.com</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/icons/Location.png" alt="Location">
+                                    <div>עפולה</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="credits">
+                    <div>כל הזכויות שמורות לגל רוטשילד</div>
+                    <div>Gal Rothschild 2023</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        document.getElementById("container").classList.remove("preload");
+    </script>
+</body>
+
+</html>

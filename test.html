@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Multi-language Website</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+        }
+
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .language-switcher label {
+            margin-right: 0.5rem;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Language switcher dropdown -->
+    <div class="language-switcher">
+        <label for="language-select">Language:</label>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+
+    <!-- Sample content to be translated -->
+    <div class="content">
+        <h1 id="title">Welcome!</h1>
+        <p id="description">This is the English version of the page.</p>
+    </div>
+
+    <script>
+        // Define the content for each language
+        const content = {
+            en: {
+                title: 'Welcome!',
+                description: 'This is the English version of the page.',
+            },
+            fr: {
+                title: 'Bienvenue!',
+                description: 'Ceci est la version française de la page.',
+            },
+            es: {
+                title: '¡Bienvenido!',
+                description: 'Esta es la versión en español de la página.',
+            },
+        };
+
+        // Get the language selector and content elements
+        const languageSelect = document.getElementById('language-select');
+        const titleElement = document.getElementById('title');
+        const descriptionElement = document.getElementById('description');
+
+        // Add an event listener to the language selector
+        languageSelect.addEventListener('change', () => {
+            // Get the value of the selected language
+            const selectedLanguage = languageSelect.value;
+
+            // Update the content for the selected language
+            titleElement.textContent = content[selectedLanguage].title;
+            descriptionElement.textContent = content[selectedLanguage].description;
+        });
+    </script>
+</body>
+
+</html>
