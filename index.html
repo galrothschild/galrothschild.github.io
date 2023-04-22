@@ -16,6 +16,8 @@
     <script>
         function switchLanguage() {
             window.scrollTo({ top: 0, behavior: "smooth" });
+            document.querySelector('div.side-eng').style.display = 'block';
+            document.querySelector('div.side-heb').style.display = 'block';
             setTimeout(() => {
                 if (!!document.getElementById('container').classList.contains('eng') || !!document.getElementById('container').classList.contains('heb')) {
                     document.getElementById('container').classList.toggle('eng');
@@ -25,6 +27,13 @@
                     document.getElementById('container').classList.toggle('eng');
                 }
             }, 300);
+            setTimeout(() => {
+                if (document.getElementById('container').classList.contains('heb')) {
+                    document.querySelector('div.side-eng').style.display = 'none';
+                } else if (document.getElementById('container').classList.contains('eng')) {
+                    document.querySelector('div.side-heb').style.display = 'none';
+                }
+            }, 2000);
         }
     </script>
 </head>
@@ -99,43 +108,43 @@
                         <div class="card">
                             <img src="../assets/portfolio's images/landing pages/landingPage1.png" alt="landing page 2">
                             <h3>Project Name</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
-                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
+                                sint, mollitia deleniti ducimus.</p>
                             <a href="../vacationLandingPage/vacation.html"><button>Go to the project</button></a>
                         </div>
                         <div class="card">
                             <img src="../assets/portfolio's images/landing pages/landingPage2.png" alt="landing page 2">
                             <h3>Project Name</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
-                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
+                                sint, mollitia deleniti ducimus.</p>
                             <a href='../coffeeLandingPage/coffee.html'><button>Go to the project</button></a>
                         </div>
                         <div class="card">
                             <img src="../assets/portfolio's images/landing pages/landingPage3.png" alt="landing page 3">
                             <h3>Project Name</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
-                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
+                                sint, mollitia deleniti ducimus.</p>
                             <a href="../hereNowLandingPage/hereNow.html"><button>Go to the project</button></a>
                         </div>
                         <div class="card">
                             <img src="../assets/portfolio's images/landing pages/landingPage4.png" alt="landing page 4">
                             <h3>Project Name</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
-                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
+                                sint, mollitia deleniti ducimus.</p>
                             <a href="../forwardLandingPage/forward.html"><button>Go to the project</button></a>
                         </div>
                         <div class="card">
                             <img src="../assets/portfolio's images/landing pages/landingPage5.png" alt="landing page 5">
                             <h3>Project Name</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
-                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
+                                sint, mollitia deleniti ducimus.</p>
                             <button>Go to the project</button>
                         </div>
                         <div class="card">
                             <img src="../assets/portfolio's images/landing pages/landingPage6.png" alt="landing page 6">
                             <h3>Project Name</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nulla enim esse
-                                magnam, sapiente iusto delectus adipisci voluptatibus necessitatibus?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
+                                sint, mollitia deleniti ducimus.</p>
                             <a href="../chaserLandingPage/chaser.html"><button>Go to the project</button></a>
                         </div>
                     </div>
@@ -143,8 +152,7 @@
                 <section class="contact">
                     <h2>Contact</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores nobis at aliquam alias
-                        molestiae neque quasi. Nobis perferendis optio veniam commodi. Sapiente assumenda dignissimos
-                        ipsum pariatur ea accusamus aut cupiditate?</p>
+                        molestiae neque quasi.</p>
                     <form action="mailto:gal.rothschild@kla-tencor.com" method="post">
                         <div class="form-control">
                             <label for="fullName">Name</label>
@@ -398,7 +406,7 @@
                             <li>
                                 <a href="mailto:gal.rothschildf@gmail.com">
                                     <img src="../assets/icons/Email.png" alt="gal.rothschildf@gmail.com">
-                                    <div class="eng">gal.rothschildf@gmail.com</div>
+                                    <div class="eng">gal.rothschildf<span>@gmail.com</span></div>
                                 </a>
                             </li>
                             <li>
@@ -417,9 +425,6 @@
             </footer>
         </div>
     </div>
-    <script>
-        document.getElementById("container").classList.remove("preload");
-    </script>
 </body>
 
 </html>
