@@ -3,12 +3,8 @@
     font-family: 'Assistant';
 }
 
-html,
-body,
-.container {
+body {
     margin: 0;
-    width: 100%;
-    height: max-content;
 }
 
 h1,
@@ -484,8 +480,6 @@ h3 {
 
 .side-eng,
 .side-heb {
-    margin-bottom: auto;
-    max-height: 100%;
     position: absolute;
     width: 100%;
     background-color: white;
@@ -497,7 +491,6 @@ h3 {
     transform: rotateY(180deg);
     display: none;
 }
-
 
 @keyframes langSwitchEng {
     0% {
