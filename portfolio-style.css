@@ -8,7 +8,7 @@ body {
 }
 
 h1,
-preloadr h2,
+h2,
 h3 {
     font-weight: 700;
 }
@@ -54,6 +54,12 @@ h3 {
 .page-header ul li a {
     text-decoration: none;
     color: #343434;
+    transition: color 1s transform 1s;
+}
+
+.page-header ul li:hover a {
+    color: #2ce0ea;
+    transform: scale(1.1);
 }
 
 /* main content header */
