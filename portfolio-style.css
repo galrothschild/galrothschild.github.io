@@ -13,6 +13,12 @@ h3 {
     font-weight: 700;
 }
 
+.flex-row {
+    flex-shrink: 1;
+    gap: 2rem;
+    display: flex;
+    padding: 0 10px;
+}
 
 
 /* Site Header and Navbar */
