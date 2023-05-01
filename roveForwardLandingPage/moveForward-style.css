@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  align-items: unset;
+  justify-content: unset;
+  flex-direction: column;
+  gap: 16px;
+  width: 30%;
+}
+form .form-control {
+  display: flex;
+  align-items: unset;
+  justify-content: unset;
+  flex-direction: column;
+  gap: unset;
+}/*# sourceMappingURL=moveForward-style.css.map */

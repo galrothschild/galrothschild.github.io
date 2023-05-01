@@ -1,0 +1,9 @@
+@use "mixins" as mixin;
+
+form {
+    @include mixin.displayFlex($direction: column, $gap: 16px);
+    width: 30%;
+    .form-control {
+        @include mixin.displayFlex($direction: column);
+    }
+}
