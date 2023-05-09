@@ -157,6 +157,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 16px;
 }
 
 .cv-inner>p {
@@ -164,16 +165,30 @@ h3 {
     text-align: center;
 }
 
+.cv-inner>a {
+    border-radius: 20px;
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
 #download-cv {
     border-radius: 20px;
     border: none;
-    width: 50%;
+    padding: 0 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
     background-color: #2ce0ea;
-    color: #2e2e2e;
+    cursor: pointer;
+}
+
+#download-cv:hover {
+    background-color: #26c0c8;
+}
+
+#download-cv:active {
+    transform: scale(0.95);
 }
 
 #download-cv>img {

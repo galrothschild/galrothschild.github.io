@@ -1,9 +1,40 @@
 @use "mixins" as mixin;
+@use "colors" as color;
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Heebo";
+    color: #fff;
+}
+
+html {
+    height: 100vh;
+    background-image: url("..\\assets\\landing pages images\\moveForwardLandingPage\\Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.content {
+    width: max(300px, 25%);
+    margin: clamp(10px, 15%, 35vh) clamp(10px, 25%, 400px);
+    background: color.$formBackground;
+    text-align: center;
+    & > * {
+        margin: 20px;
+    }
+}
 form {
     @include mixin.displayFlex($direction: column, $gap: 16px);
-    width: 30%;
     .form-control {
         @include mixin.displayFlex($direction: column);
+        & input {
+            width: 100%;
+        }
     }
+    text-align: start;
+    align-items: start;
 }
