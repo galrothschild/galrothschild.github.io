@@ -89,7 +89,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../assets/bg.jpeg");
+    background-image: url("../images/bg.jpeg");
     background-size: 100% 100%;
     background-color: #B3F3F7;
     background-blend-mode: multiply;
