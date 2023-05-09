@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Kaushan+Script&display=swap" rel="stylesheet">
     <!-- Css Link -->
-    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="stylesheet" target="_blank" href="./style/portfolio-style.css">
     <title>Gal's Portfolio</title>
     <script>
         function switchLanguage() {
@@ -51,7 +51,7 @@
                     </ul>
                 </nav>
                 <div class="name">Gal Rothschild</div>
-                <img src="../assets/portfolio's images/Wave.png" alt="Image of a wave">
+                <img src="./images/Wave.png" alt="Image of a wave">
                 <button onclick="switchLanguage()">עברית</button>
             </header>
             <main>
@@ -62,22 +62,22 @@
                 </header>
                 <div class="technologies">
                     <ul>
-                        <li><img src="../assets/portfolio's images/technologies/node.png" alt="Node JS"></li>
-                        <li><img src="../assets/portfolio's images/technologies/react.png" alt="React"></li>
-                        <li><img src="../assets/portfolio's images/technologies/api.png" alt="API"></li>
-                        <li><img src="../assets/portfolio's images/technologies/typescript.png" alt="TypeScript"></li>
-                        <li><img src="../assets/portfolio's images/technologies/es6.png" alt="ES6"></li>
-                        <li><img src="../assets/portfolio's images/technologies/oop.png" alt="OOP"></li>
-                        <li><img src="../assets/portfolio's images/technologies/javascript.png" alt="javascript"></li>
-                        <li><img src="../assets/portfolio's images/technologies/scss.png" alt="scss"></li>
-                        <li><img src="../assets/portfolio's images/technologies/bootstrap.png" alt="bootstrap"></li>
-                        <li><img src="../assets/portfolio's images/technologies/css.png" alt="css"></li>
-                        <li><img src="../assets/portfolio's images/technologies/html.png" alt="html"></li>
+                        <li><img src="./images/technologies/node.png" alt="Node JS"></li>
+                        <li><img src="./images/technologies/react.png" alt="React"></li>
+                        <li><img src="./images/technologies/api.png" alt="API"></li>
+                        <li><img src="./images/technologies/typescript.png" alt="TypeScript"></li>
+                        <li><img src="./images/technologies/es6.png" alt="ES6"></li>
+                        <li><img src="./images/technologies/oop.png" alt="OOP"></li>
+                        <li><img src="./images/technologies/javascript.png" alt="javascript"></li>
+                        <li><img src="./images/technologies/scss.png" alt="scss"></li>
+                        <li><img src="./images/technologies/bootstrap.png" alt="bootstrap"></li>
+                        <li><img src="./images/technologies/css.png" alt="css"></li>
+                        <li><img src="./images/technologies/html.png" alt="html"></li>
                     </ul>
                 </div>
                 <section class="about" id="about">
                     <article class="about-me">
-                        <img src="../assets/portfolio's images/profile.jpg" alt="Profile Picture">
+                        <img src="./images/profile.jpg" alt="Profile Picture">
                         <div>
                             <h2>About me</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ab natus esse voluptatum
@@ -92,14 +92,14 @@
                         </div>
                     </article>
                     <article class="cv">
-                        <img src="../assets/portfolio's images/pdf.png" alt="Logo of PDF">
+                        <img src="./images/pdf.png" alt="Logo of PDF">
                         <div class="cv-inner">
                             <h2>Download my CV</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nostrum inventore enim
                                 perferendis assumenda. Nobis!</p>
-                            <a href="./assets/GalRothschildCV.pdf" download>
+                            <a target="_blank" href="./assets/GalRothschildCV.pdf" download>
                                 <button id="download-cv" aria-label="Download CV"> <span>Download PDF</span> <img
-                                        src="../assets/icons/cloud-download.png" alt="Download"
+                                        src="./images/icons/cloud-download.png" alt="Download"
                                         aria-hidden="true"></button>
                             </a>
                         </div>
@@ -109,65 +109,74 @@
                     <h2>Chosen Projects</h2>
                     <div class="gallery-cards">
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage1.png" alt="landing page 2">
+                            <img src="./images/landing pages/landingPage1.png" alt="landing page 1">
                             <h3>Project Name</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
                                 sint, mollitia deleniti ducimus.</p>
-                            <div class="flex-row">
-                                <a href="../vacationLandingPage/vacation.html"><button>Go to project</button></a>
+                            <div class="button-flex">
                                 <a
                                     href="https://github.com/galrothschild/VacationLandingPage/archive/refs/heads/main.zip"><button>Download
+                                        project</button></a><a target="_blank"
+                                    href="./projects/vacationLandingPage/"><button>Go to
                                         project</button></a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage2.png" alt="landing page 2">
+                            <img src="./images/landing pages/landingPage2.png" alt="landing page 2">
                             <h3>Project Name</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
                                 sint, mollitia deleniti ducimus.</p>
-                            <div class="flex-row"><a
+                            <div class="button-flex"><a
                                     href="https://github.com/galrothschild/CoffeeLandingPage/archive/refs/heads/main.zip">
                                     <button>Download Project</button>
-                                </a><a href='../coffeeLandingPage/coffee.html'><button>Go to project</button></a></div>
+                                </a><a target="_blank" href='./projects/coffeeLandingPage/'><button>Go to
+                                        project</button></a></div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage3.png" alt="landing page 3">
+                            <img src="./images/landing pages/landingPage3.png" alt="landing page 3">
                             <h3>Project Name</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
                                 sint, mollitia deleniti ducimus.</p>
-                            <div class="flex-row"><a
+                            <div class="button-flex"><a
                                     href="https://github.com/galrothschild/HereNowLandingPage/archive/refs/heads/main.zip">
                                     <button>Download Project</button>
-                                </a><a href="../hereNowLandingPage/hereNow.html"><button>Go to project</button></a>
+                                </a><a target="_blank" href="./projects/hereNowLandingPage/"><button>Go to
+                                        project</button></a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage4.png" alt="landing page 4">
+                            <img src="./images/landing pages/landingPage4.png" alt="landing page 4">
                             <h3>Project Name</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
                                 sint, mollitia deleniti ducimus.</p>
-                            <div class="flex-row"><a
+                            <div class="button-flex"><a
                                     href="https://github.com/galrothschild/ForwardLandingPage/archive/refs/heads/main.zip">
                                     <button>Download Project</button>
-                                </a><a href="../forwardLandingPage/forward.html"><button>Go to project</button></a>
+                                </a><a target="_blank" href="./projects/forwardLandingPage/"><button>Go to
+                                        project</button></a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage5.png" alt="landing page 5">
+                            <img src="./images/landing pages/landingPage5.png" alt="landing page 5">
                             <h3>Project Name</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
                                 sint, mollitia deleniti ducimus.</p>
-                            <button>Go to project</button>
-                        </div>
-                        <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage6.png" alt="landing page 6">
-                            <h3>Project Name</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
-                                sint, mollitia deleniti ducimus.</p>
-                            <div class="flex-row"><a
+                            <div class="button-flex"><a
                                     href="https://github.com/galrothschild/ChaserLandingPage/archive/refs/heads/main.zip">
                                     <button>Download Project</button>
-                                </a><a href="../chaserLandingPage/chaser.html"><button>Go to project</button></a></div>
+                                </a><a target="_blank" href="./projects/moveForwardLandingPage/"><button>Go to
+                                        project</button></a></div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/landing pages/landingPage6.png" alt="landing page 6">
+                            <h3>Project Name</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores, veniam, sapiente
+                                sint, mollitia deleniti ducimus.</p>
+                            <div class="button-flex"><a
+                                    href="https://github.com/galrothschild/ChaserLandingPage/archive/refs/heads/main.zip">
+                                    <button>Download Project</button>
+                                </a><a target="_blank" href="./projects/chaserLandingPage/"><button>Go to
+                                        project</button></a></div>
                         </div>
                     </div>
                 </section>
@@ -202,37 +211,37 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src="../assets/icons/Facebook.png" alt="Facebook">
+                                    <img src="./images/icons/Facebook.png" alt="Facebook">
                                     <div class="eng">#Bob</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/gal-rothschild-b9ab39217/">
-                                    <img src="../assets/icons/LinkedIn.png" alt="LinkedIn">
+                                    <img src="./images/icons/LinkedIn.png" alt="LinkedIn">
                                     <div class="eng">#Gal Rothschild</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="tel:0523309312">
-                                    <img src="../assets/icons/Phone number.png" alt="Phone number">
+                                    <img src="./images/icons/Phone number.png" alt="Phone number">
                                     <div>052-3309312</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://api.whatsapp.com/send?phone=972523309312">
-                                    <img src="../assets/icons/Chat.png" alt="Chat">
+                                    <img src="./images/icons/Chat.png" alt="Chat">
                                     <div>052-3309312</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="mailto:gal.rothschildf@gmail.com">
-                                    <img src="../assets/icons/Email.png" alt="gal.rothschildf@gmail.com">
+                                    <img src="./images/icons/Email.png" alt="gal.rothschildf@gmail.com">
                                     <div class="eng">gal.rothschildf@gmail.com</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="../assets/icons/Location.png" alt="Location">
+                                    <img src="./images/icons/Location.png" alt="Location">
                                     <div>Afula</div>
                                 </a>
                             </li>
@@ -257,7 +266,7 @@
                     </ul>
                 </nav>
                 <div class="name">Gal Rothschild</div>
-                <img src="../assets/portfolio's images/Wave.png" alt="Image of a wave">
+                <img src="./images/Wave.png" alt="Image of a wave">
                 <button onclick="switchLanguage()">English</button>
 
             </header>
@@ -269,22 +278,22 @@
                 </header>
                 <div class="technologies">
                     <ul>
-                        <li><img src="../assets/portfolio's images/technologies/node.png" alt="Node JS"></li>
-                        <li><img src="../assets/portfolio's images/technologies/react.png" alt="React"></li>
-                        <li><img src="../assets/portfolio's images/technologies/api.png" alt="API"></li>
-                        <li><img src="../assets/portfolio's images/technologies/typescript.png" alt="TypeScript"></li>
-                        <li><img src="../assets/portfolio's images/technologies/es6.png" alt="ES6"></li>
-                        <li><img src="../assets/portfolio's images/technologies/oop.png" alt="OOP"></li>
-                        <li><img src="../assets/portfolio's images/technologies/javascript.png" alt="javascript"></li>
-                        <li><img src="../assets/portfolio's images/technologies/scss.png" alt="scss"></li>
-                        <li><img src="../assets/portfolio's images/technologies/bootstrap.png" alt="bootstrap"></li>
-                        <li><img src="../assets/portfolio's images/technologies/css.png" alt="css"></li>
-                        <li><img src="../assets/portfolio's images/technologies/html.png" alt="html"></li>
+                        <li><img src="./images/technologies/node.png" alt="Node JS"></li>
+                        <li><img src="./images/technologies/react.png" alt="React"></li>
+                        <li><img src="./images/technologies/api.png" alt="API"></li>
+                        <li><img src="./images/technologies/typescript.png" alt="TypeScript"></li>
+                        <li><img src="./images/technologies/es6.png" alt="ES6"></li>
+                        <li><img src="./images/technologies/oop.png" alt="OOP"></li>
+                        <li><img src="./images/technologies/javascript.png" alt="javascript"></li>
+                        <li><img src="./images/technologies/scss.png" alt="scss"></li>
+                        <li><img src="./images/technologies/bootstrap.png" alt="bootstrap"></li>
+                        <li><img src="./images/technologies/css.png" alt="css"></li>
+                        <li><img src="./images/technologies/html.png" alt="html"></li>
                     </ul>
                 </div>
                 <section class="about" id="about-heb">
                     <article class="about-me">
-                        <img src="../assets/portfolio's images/profile.jpg" alt="Profile Picture">
+                        <img src="./images/profile.jpg" alt="Profile Picture">
                         <div>
                             <h2>קצת עלי</h2>
                             <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס,
@@ -307,15 +316,15 @@
                         </div>
                     </article>
                     <article class="cv">
-                        <img src="../assets/portfolio's images/pdf.png" alt="Logo of PDF">
+                        <img src="./images/pdf.png" alt="Logo of PDF">
                         <div class="cv-inner">
                             <h2>להורדת קורות חיים</h2>
                             <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס,
                                 אקווזמן
                             </p>
-                            <a href="./assets/GalRothschildCV.pdf" download>
+                            <a target="_blank" href="./assets/GalRothschildCV.pdf" download>
                                 <button id="download-cv" aria-label="Download CV"> <span>להורדת מסמך PDF</span> <img
-                                        src="../assets/icons/cloud-download.png" alt="Download"
+                                        src="./images/icons/cloud-download.png" alt="Download"
                                         aria-hidden="true"></button>
                             </a>
                         </div>
@@ -325,57 +334,84 @@
                     <h2>עבודות נבחרות</h2>
                     <div class="gallery-cards">
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage1.png" alt="landing page 2">
+                            <img src="./images/landing pages/landingPage1.png" alt="landing page 1">
                             <h3>Project Name</h3>
                             <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
                                 אדיפיסינג
                                 אלית. סת אלמנקום ניסי נון ניבאה.</p>
-                            <div class="flex-row"><a href="../vacationLandingPage/vacation.html"><button>למעבר
-                                        לפרוייקט</button></a><a href=""><button>להורדת הפרוייקט</button></a></div>
+                            <div class="button-flex">
+                                <a target="_blank" href="./projects/vacationLandingPage/"><button>למעבר
+                                        לפרוייקט</button></a>
+                                <a
+                                    href="https://github.com/galrothschild/VacationLandingPage/archive/refs/heads/main.zip">
+                                    <button>להורדת הפרוייקט</button>
+                                </a>
+                            </div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage2.png" alt="landing page 2">
+                            <img src="./images/landing pages/landingPage2.png" alt="landing page 2">
                             <h3>Project Name</h3>
                             <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
                                 אדיפיסינג
                                 אלית. סת אלמנקום ניסי נון ניבאה.</p>
-                            <div class="flex-row"><a href='../coffeeLandingPage/coffee.html'><button>למעבר
-                                        לפרוייקט</button></a><a href=""><button>להורדת הפרוייקט</button></a></div>
+                            <div class="button-flex"><a target="_blank"
+                                    href="./projects/coffeeLandingPage/"><button>למעבר
+                                        לפרוייקט</button></a><a
+                                    href="https://github.com/galrothschild/CoffeeLandingPage/archive/refs/heads/main.zip">
+                                    <button>להורדת הפרוייקט</button>
+                                </a></div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage3.png" alt="landing page 3">
+                            <img src="./images/landing pages/landingPage3.png" alt="landing page 3">
                             <h3>Project Name</h3>
                             <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
                                 אדיפיסינג
                                 אלית. סת אלמנקום ניסי נון ניבאה.</p>
-                            <div class="flex-row"><a href="../hereNowLandingPage/hereNow.html"><button>למעבר
-                                        לפרוייקט</button></a><a href=""><button>להורדת הפרוייקט</button></a></div>
+                            <div class="button-flex"><a target="_blank"
+                                    href="./projects/hereNowLandingPage/"><button>למעבר
+                                        לפרוייקט</button></a><a
+                                    href="https://github.com/galrothschild/HereNowLandingPage/archive/refs/heads/main.zip">
+                                    <button>להורדת הפרוייקט</button>
+                                </a></div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage4.png" alt="landing page 4">
+                            <img src="./images/landing pages/landingPage4.png" alt="landing page 4">
                             <h3>Project Name</h3>
                             <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
                                 אדיפיסינג
                                 אלית. סת אלמנקום ניסי נון ניבאה.</p>
-                            <div class="flex-row"><a href="../forwardLandingPage/forward.html"><button>למעבר
-                                        לפרוייקט</button></a><a href=""><button>להורדת הפרוייקט</button></a></div>
+                            <div class="button-flex"><a target="_blank"
+                                    href="./projects/forwardLandingPage/"><button>למעבר
+                                        לפרוייקט</button></a><a
+                                    href="https://github.com/galrothschild/ForwardLandingPage/archive/refs/heads/main.zip">
+                                    <button>להורדת הפרוייקט</button>
+                                </a></div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage5.png" alt="landing page 5">
+                            <img src="./images/landing pages/landingPage5.png" alt="landing page 5">
                             <h3>Project Name</h3>
                             <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
                                 אדיפיסינג
                                 אלית. סת אלמנקום ניסי נון ניבאה.</p>
-                            <div class="flex-row"><button>למעבר לפרוייקט</button></div>
+                            <div class="button-flex"><a target="_blank"
+                                    href="./projects/moveForwardLandingPage/"><button>למעבר
+                                        לפרוייקט</button></a><a
+                                    href="https://github.com/galrothschild/ForwardLandingPage/archive/refs/heads/main.zip">
+                                    <button>להורדת הפרוייקט</button>
+                                </a></div>
                         </div>
                         <div class="card">
-                            <img src="../assets/portfolio's images/landing pages/landingPage6.png" alt="landing page 6">
+                            <img src="./images/landing pages/landingPage6.png" alt="landing page 6">
                             <h3>Project Name</h3>
                             <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
                                 אדיפיסינג
                                 אלית. סת אלמנקום ניסי נון ניבאה.</p>
-                            <div class="flex-row"><a href="../chaserLandingPage/chaser.html"><button>למעבר
-                                        לפרוייקט</button></a><a href=""><button>להורדת הפרוייקט</button></a></div>
+                            <div class="button-flex"><a target="_blank"
+                                    href="./projects/chaserLandingPage/"><button>למעבר
+                                        לפרוייקט</button></a><a
+                                    href="https://github.com/galrothschild/ChaserLandingPage/archive/refs/heads/main.zip">
+                                    <button>להורדת הפרוייקט</button>
+                                </a></div>
                         </div>
                     </div>
                 </section>
@@ -411,37 +447,37 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src="../assets/icons/Facebook.png" alt="Facebook">
+                                    <img src="./images/icons/Facebook.png" alt="Facebook">
                                     <div class="eng">#Bob</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/gal-rothschild-b9ab39217/">
-                                    <img src="../assets/icons/LinkedIn.png" alt="LinkedIn">
+                                    <img src="./images/icons/LinkedIn.png" alt="LinkedIn">
                                     <div class="eng">#Gal Rothschild</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="tel:0523309312">
-                                    <img src="../assets/icons/Phone number.png" alt="Phone number">
+                                    <img src="./images/icons/Phone number.png" alt="Phone number">
                                     <div>052-3309312</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://api.whatsapp.com/send?phone=972523309312">
-                                    <img src="../assets/icons/Chat.png" alt="Chat">
+                                    <img src="./images/icons/Chat.png" alt="Chat">
                                     <div>052-3309312</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="mailto:gal.rothschildf@gmail.com">
-                                    <img src="../assets/icons/Email.png" alt="gal.rothschildf@gmail.com">
+                                    <img src="./images/icons/Email.png" alt="gal.rothschildf@gmail.com">
                                     <div class="eng">gal.rothschildf<span>@gmail.com</span></div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="../assets/icons/Location.png" alt="Location">
+                                    <img src="./images/icons/Location.png" alt="Location">
                                     <div>עפולה</div>
                                 </a>
                             </li>

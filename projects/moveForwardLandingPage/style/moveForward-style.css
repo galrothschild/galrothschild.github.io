@@ -10,7 +10,7 @@
 
 html {
   height: 100vh;
-  background-image: url("..\\assets\\landing pages images\\moveForwardLandingPage\\Background.jpg");
+  background-image: url("../images/Background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }

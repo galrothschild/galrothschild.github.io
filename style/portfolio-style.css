@@ -19,12 +19,17 @@ h3 {
     font-weight: 700;
 }
 
-.flex-row {
+.button-flex {
     white-space: nowrap;
     gap: 1rem;
     display: flex;
+    flex-direction: column;
     padding: 0 10px;
     margin: 10px 0;
+}
+
+.button-flex>a>button {
+    width: 100%;
 }
 
 
@@ -220,7 +225,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: max(65%, 340px);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 10px 10px 10px #e0e0e0;
@@ -367,6 +372,11 @@ h3 {
 
 
 /* Media query */
+@media only screen and (min-width:400px) {
+    .button-flex {
+        flex-direction: unset;
+    }
+}
 
 @media only screen and (min-width:450px) {
     .page-header>nav>ul {
@@ -452,7 +462,7 @@ h3 {
     }
 
     .card {
-        width: 40%;
+        width: max(40%, 340px);
         max-width: 290px;
     }
 
