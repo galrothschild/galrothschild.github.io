@@ -12,17 +12,28 @@ html {
   height: 100vh;
   background-image: url("../images/Background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 200% auto;
+}
+
+.container {
+  display: flex;
+  align-items: unset;
+  justify-content: center;
+  flex-direction: unset;
+  gap: unset;
 }
 
 .content {
-  width: max(300px, 25%);
-  margin: clamp(10px, 15%, 35vh) clamp(10px, 25%, 400px);
+  width: clamp(300px, 80%, 450px);
+  margin: 100px 0;
   background: hsla(0, 0%, 10%, 0.831);
   text-align: center;
-}
-.content > * {
-  margin: 20px;
+  display: flex;
+  align-items: unset;
+  justify-content: unset;
+  flex-direction: column;
+  gap: 16px;
+  padding: 80px 30px;
 }
 
 form {
@@ -35,6 +46,7 @@ form {
   align-items: start;
 }
 form .form-control {
+  width: 100%;
   display: flex;
   align-items: unset;
   justify-content: unset;
@@ -42,5 +54,23 @@ form .form-control {
   gap: unset;
 }
 form .form-control input {
-  width: 100%;
+  border: 1px solid hsl(331, 77%, 47%);
+  line-height: 2rem;
+}
+form button {
+  border: none;
+  padding: 10px 30px;
+  background-color: hsl(331, 77%, 47%);
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    background-size: 100% auto;
+  }
+  .container {
+    display: block;
+  }
+  .container .content {
+    margin: clamp(10px, 15%, 35vh) clamp(10px, 25%, 400px);
+  }
 }/*# sourceMappingURL=moveForward-style.css.map */
