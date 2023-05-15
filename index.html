@@ -481,6 +481,15 @@
             </footer>
         </div>
     </div>
+    <script>
+        if ("https://galrothschild.github.io/".test(window.location.href)) {
+            const projectLinks = document.querySelectorAll('a[href*="/projects"]');
+
+            projectLinks.forEach(link => {
+                link.href = link.href.replace('/projects', '');
+            });
+        }
+    </script>
 </body>
 
 </html>
