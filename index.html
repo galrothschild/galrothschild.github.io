@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="eng">
 
 <head>
     <meta charset="UTF-8">
@@ -12,473 +12,210 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Kaushan+Script&display=swap" rel="stylesheet">
     <!-- Css Link -->
     <link rel="stylesheet" target="_blank" href="./style/portfolio-style.css">
+    <script type="module" src="script/dist/script.js" defer async></script>
     <title>Gal's Portfolio</title>
-    <script>
-        function switchLanguage() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-            document.querySelector('div.side-eng').style.display = 'block';
-            document.querySelector('div.side-heb').style.display = 'block';
-            setTimeout(() => {
-                if (!!document.getElementById('container').classList.contains('eng') || !!document.getElementById('container').classList.contains('heb')) {
-                    document.getElementById('container').classList.toggle('eng');
-                    document.getElementById('container').classList.toggle('heb');
-                }
-                else if (!document.getElementById('container').classList.contains('eng')) {
-                    document.getElementById('container').classList.toggle('eng');
-                }
-            }, 300);
-            setTimeout(() => {
-                if (document.getElementById('container').classList.contains('heb')) {
-                    document.querySelector('div.side-eng').style.display = 'none';
-                } else if (document.getElementById('container').classList.contains('eng')) {
-                    document.querySelector('div.side-heb').style.display = 'none';
-                }
-            }, 2000);
-        }
-    </script>
 </head>
 
 <body>
     <div class="container" id="container">
-        <div class="side-eng" dir="ltr"><!-- Header and Navbar of the page -->
-            <header class="page-header">
-                <nav>
-                    <ul>
-                        <li><a href="#main-header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="name">Gal Rothschild</div>
-                <img src="./images/Wave.png" alt="Image of a wave">
-                <button onclick="switchLanguage()">עברית</button>
+        <!-- Header and Navbar of the page -->
+        <header class="page-header">
+            <nav>
+                <ul>
+                    <li><a href="#main-header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="name">Gal Rothschild</div>
+            <img src="./images/Wave.png" alt="Image of a wave">
+        </header>
+        <main>
+            <!-- Header of the main content -->
+            <header class="main-header" id="main-header">
+                <h1>Personal Portfolio</h1>
+                <p>This is my first portfolio</p>
             </header>
-            <main>
-                <!-- Header of the main content -->
-                <header class="main-header" id="main-header">
-                    <h1>Personal Portfolio</h1>
-                    <p>This is my first portfolio</p>
-                </header>
-                <div class="technologies">
-                    <ul>
-                        <li><img src="./images/technologies/node.png" alt="Node JS"></li>
-                        <li><img src="./images/technologies/react.png" alt="React"></li>
-                        <li><img src="./images/technologies/api.png" alt="API"></li>
-                        <li><img src="./images/technologies/typescript.png" alt="TypeScript"></li>
-                        <li><img src="./images/technologies/es6.png" alt="ES6"></li>
-                        <li><img src="./images/technologies/oop.png" alt="OOP"></li>
-                        <li><img src="./images/technologies/javascript.png" alt="javascript"></li>
-                        <li><img src="./images/technologies/scss.png" alt="scss"></li>
-                        <li><img src="./images/technologies/bootstrap.png" alt="bootstrap"></li>
-                        <li><img src="./images/technologies/css.png" alt="css"></li>
-                        <li><img src="./images/technologies/html.png" alt="html"></li>
-                    </ul>
-                </div>
-                <section class="about" id="about">
-                    <article class="about-me">
-                        <img src="./images/profile.jpg" alt="Profile Picture">
-                        <div>
-                            <h2>About me</h2>
-                            <p>Hi, I'm Gal, a starting web developer who has recently completed this assignment for
-                                HackerU Academy, which involved writing this portfolio site and 6 landing pages using
-                                HTML and CSS.</p>
-                            <p>I enjoy writing code a lot and it does get quite tough at times, especially when I get
-                                stuck on the small details, but I'm learning to accept that perfection is not always
-                                attainable.</p>
-                            <p>While I currently know HTML, CSS and I have prior experience with Python and PowerShell
-                                scripting, I'm interested in learning more about JavaScript, C# and maybe even C++ to
-                                expand my knowledge and skills as a developer. My long-term goal is to use my skills in
-                                development to make a positive impact on the world. I believe that this field provides
-                                limitless options to explore and connect with various industries.</p>
-                            <p>Outside of coding, I enjoy playing video games, cooking and playing musical instruments.
-                                I currently work in IT as a support technician, where I got a deep understanding of
-                                windows enterprise environment and servers. This knowledge will be a big bonus for me as
-                                a starting developer, and I hope to continue building upon it in the future.</p>
-                        </div>
-                    </article>
-                    <article class="cv">
-                        <img src="./images/pdf.png" alt="Logo of PDF">
-                        <div class="cv-inner">
-                            <h2>Download my CV</h2>
-                            <p>Here you can find my CV showing what I've been doing with my life.</p>
-                            <a target="_blank" href="./assets/GalRothschildCV.pdf" download>
-                                <button id="download-cv" aria-label="Download CV"> <span>Download PDF</span> <img
-                                        src="./images/icons/cloud-download.png" alt="Download"
-                                        aria-hidden="true"></button>
-                            </a>
-                        </div>
-                    </article>
-                </section>
-                <section class="gallery" id="gallery">
-                    <h2>Chosen Projects</h2>
-                    <div class="gallery-cards">
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage1.png" alt="landing page 1">
-                            <h3>Vacation!</h3>
-                            <p>Here you can see a demo landing page for a vacation signup form. It has a good example of
-                                a background image with an overlaying form.</p>
-                            <div class="button-flex">
-                                <a
-                                    href="https://github.com/galrothschild/VacationLandingPage/archive/refs/heads/main.zip"><button>Download
-                                        project</button></a><a target="_blank"
-                                    href="./projects/vacationLandingPage/"><button>Go to
-                                        project</button></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage2.png" alt="landing page 2">
-                            <h3>Coffee Shop</h3>
-                            <p>This is a demo landing page for a coffee shop, you can pick up your favorite cup of joe!
-                            </p>
-                            <div class="button-flex"><a
-                                    href="https://github.com/galrothschild/CoffeeLandingPage/archive/refs/heads/main.zip">
-                                    <button>Download Project</button>
-                                </a><a target="_blank" href='./projects/coffeeLandingPage/'><button>Go to
-                                        project</button></a></div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage3.png" alt="landing page 3">
-                            <h3>Here and Now</h3>
-                            <p>This is a demo for a gradient background with an overlaying form.</p>
-                            <div class="button-flex"><a
-                                    href="https://github.com/galrothschild/HereNowLandingPage/archive/refs/heads/main.zip">
-                                    <button>Download Project</button>
-                                </a><a target="_blank" href="./projects/hereNowLandingPage/"><button>Go to
-                                        project</button></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage4.png" alt="landing page 4">
-                            <h3>Forward!</h3>
-                            <p>This is a landing page for marketing, it is done using Bootstrap for most elements to
-                                showcase my understanding of it.</p>
-                            <div class="button-flex"><a
-                                    href="https://github.com/galrothschild/ForwardLandingPage/archive/refs/heads/main.zip">
-                                    <button>Download Project</button>
-                                </a><a target="_blank" href="./projects/forwardLandingPage/"><button>Go to
-                                        project</button></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage5.png" alt="landing page 5">
-                            <h3>Move Forward</h3>
-                            <p>This is a showcase of my sass skills, and a good example for a background size changing
-                                with the screen size.</p>
-                            <div class="button-flex"><a
-                                    href="https://github.com/galrothschild/moveForwardLandingPage/archive/refs/heads/main.zip">
-                                    <button>Download Project</button>
-                                </a><a target="_blank" href="./projects/moveForwardLandingPage/"><button>Go to
-                                        project</button></a></div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage6.png" alt="landing page 6">
-                            <h3>Chaser!</h3>
-                            <p>This is a demo for a pub offering a free chaser, which is definitely not a scam!</p>
-                            <div class="button-flex"><a
-                                    href="https://github.com/galrothschild/ChaserLandingPage/archive/refs/heads/main.zip">
-                                    <button>Download Project</button>
-                                </a><a target="_blank" href="./projects/chaserLandingPage/"><button>Go to
-                                        project</button></a></div>
-                        </div>
+            <div class="technologies">
+                <ul>
+                    <li><img src="./images/technologies/node.png" alt="Node JS"></li>
+                    <li><img src="./images/technologies/react.png" alt="React"></li>
+                    <li><img src="./images/technologies/api.png" alt="API"></li>
+                    <li><img src="./images/technologies/typescript.png" alt="TypeScript"></li>
+                    <li><img src="./images/technologies/es6.png" alt="ES6"></li>
+                    <li><img src="./images/technologies/oop.png" alt="OOP"></li>
+                    <li><img src="./images/technologies/javascript.png" alt="javascript"></li>
+                    <li><img src="./images/technologies/scss.png" alt="scss"></li>
+                    <li><img src="./images/technologies/bootstrap.png" alt="bootstrap"></li>
+                    <li><img src="./images/technologies/css.png" alt="css"></li>
+                    <li><img src="./images/technologies/html.png" alt="html"></li>
+                </ul>
+            </div>
+            <section class="about" id="about">
+                <article class="about-me">
+                    <img src="./images/profile.jpg" alt="Profile Picture">
+                    <div>
+                        <h2>About me</h2>
+                        <p>Hi, I'm Gal, a starting web developer who has recently completed this assignment for
+                            HackerU Academy, which involved writing this portfolio site and 6 landing pages using
+                            HTML and CSS.</p>
+                        <p>I enjoy writing code a lot and it does get quite tough at times, especially when I get
+                            stuck on the small details, but I'm learning to accept that perfection is not always
+                            attainable.</p>
+                        <p>While I currently know HTML, CSS and I have prior experience with Python and PowerShell
+                            scripting, I'm interested in learning more about JavaScript, C# and maybe even C++ to
+                            expand my knowledge and skills as a developer. My long-term goal is to use my skills in
+                            development to make a positive impact on the world. I believe that this field provides
+                            limitless options to explore and connect with various industries.</p>
+                        <p>Outside of coding, I enjoy playing video games, cooking and playing musical instruments.
+                            I currently work in IT as a support technician, where I got a deep understanding of
+                            windows enterprise environment and servers. This knowledge will be a big bonus for me as
+                            a starting developer, and I hope to continue building upon it in the future.</p>
                     </div>
-                </section>
-                <section class="contact" id="contact">
-                    <h2>Contact</h2>
-                    <p>Feel free to fill in your contact information and I will make sure to get back to you.
-                        This also shows my ability to style a full form.
-                    </p>
-                    <form action="mailto:gal.rothschildf@gmail.com" method="post">
-                        <div class="form-control">
-                            <label for="fullName">Name</label>
-                            <input type="text" name="fullName" id="fullName" placeholder="Name">
-                        </div>
-                        <div class="form-control">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-control">
-                            <label for="tel">Phone Number</label>
-                            <input type="tel" name="tel" id="tel" placeholder="Phone Number">
-                        </div>
-                        <div class="form-control">
-                            <label for="">Message</label>
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit">Send</button>
-                    </form>
-                </section>
-            </main>
-            <footer>
-                <div class="reflinks">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/icons/Facebook.png" alt="Facebook">
-                                    <div class="eng">#Bob</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/gal-rothschild-b9ab39217/">
-                                    <img src="./images/icons/LinkedIn.png" alt="LinkedIn">
-                                    <div class="eng">#Gal Rothschild</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tel:0523309312">
-                                    <img src="./images/icons/Phone number.png" alt="Phone number">
-                                    <div>052-3309312</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://api.whatsapp.com/send?phone=972523309312">
-                                    <img src="./images/icons/Chat.png" alt="Chat">
-                                    <div>052-3309312</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:gal.rothschildf@gmail.com">
-                                    <img src="./images/icons/Email.png" alt="gal.rothschildf@gmail.com">
-                                    <div class="eng">gal.rothschildf@gmail.com</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/icons/Location.png" alt="Location">
-                                    <div>Afula</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                </article>
+                <article class="cv">
+                    <img src="./images/pdf.png" alt="Logo of PDF">
+                    <div class="cv-inner">
+                        <h2>Download my CV</h2>
+                        <p>Here you can find my CV showing what I've been doing with my life.</p>
+                        <a target="_blank" href="./assets/GalRothschildCV.pdf" download>
+                            <button id="download-cv" aria-label="Download CV"> <span>Download PDF</span> <img
+                                    src="./images/icons/cloud-download.png" alt="Download" aria-hidden="true"></button>
+                        </a>
+                    </div>
+                </article>
+            </section>
+            <section class="gallery" id="gallery">
+                <h2>Chosen Projects</h2>
+                <div class="gallery-cards">
+                    <div class="card">
+                        <img src="./images/landing pages/landingPage1.png" alt="landing page 1">
+                        <h3>Vacation!</h3>
+                        <p>Here you can see a demo landing page for a vacation signup form. It has a good example of
+                            a background image with an overlaying form.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/landing pages/landingPage2.png" alt="landing page 2">
+                        <h3>Coffee Shop</h3>
+                        <p>This is a demo landing page for a coffee shop, you can pick up your favorite cup of joe!
+                        </p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/landing pages/landingPage3.png" alt="landing page 3">
+                        <h3>Here and Now</h3>
+                        <p>This is a demo for a gradient background with an overlaying form.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/landing pages/landingPage4.png" alt="landing page 4">
+                        <h3>Forward!</h3>
+                        <p>This is a landing page for marketing, it is done using Bootstrap for most elements to
+                            showcase my understanding of it.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/landing pages/landingPage5.png" alt="landing page 5">
+                        <h3>Move Forward</h3>
+                        <p>This is a showcase of my sass skills, and a good example for a background size changing
+                            with the screen size.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/landing pages/landingPage6.png" alt="landing page 6">
+                        <h3>Chaser!</h3>
+                        <p>This is a demo for a pub offering a free chaser, which is definitely not a scam!</p>
+                        <button>Learn More</button>
+                    </div>
                 </div>
-                <div class="credits">
-                    <div>All rights reserved</div>
-                    <div>© Gal Rothschild 2023</div>
-                </div>
-            </footer>
-        </div>
-        <div class="side-heb" dir="rtl">
-            <!-- Header and Navbar of the page -->
-            <header class="page-header">
+            </section>
+            <section class="contact" id="contact">
+                <h2>Contact</h2>
+                <p>Feel free to fill in your contact information and I will make sure to get back to you.
+                    This also shows my ability to style a full form.
+                </p>
+                <form action="mailto:gal.rothschildf@gmail.com" method="post">
+                    <div class="form-control">
+                        <label for="fullName">Name</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Name">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-control">
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-control">
+                        <label for="">Message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="reflinks">
                 <nav>
                     <ul>
-                        <li><a href="#main-header-heb">ראשי</a></li>
-                        <li><a href="#about-heb">אודות</a></li>
-                        <li><a href="#gallery-heb">גלריה</a></li>
-                        <li><a href="#contact-heb">צור קשר</a></li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/Facebook.png" alt="Facebook">
+                                <div class="eng">#Bob</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/gal-rothschild-b9ab39217/">
+                                <img src="./images/icons/LinkedIn.png" alt="LinkedIn">
+                                <div class="eng">#Gal Rothschild</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:0523309312">
+                                <img src="./images/icons/Phone number.png" alt="Phone number">
+                                <div>052-3309312</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=972523309312">
+                                <img src="./images/icons/Chat.png" alt="Chat">
+                                <div>052-3309312</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:gal.rothschildf@gmail.com">
+                                <img src="./images/icons/Email.png" alt="gal.rothschildf@gmail.com">
+                                <div class="eng">gal.rothschildf@gmail.com</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/Location.png" alt="Location">
+                                <div>Afula</div>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-                <div class="name">Gal Rothschild</div>
-                <img src="./images/Wave.png" alt="Image of a wave">
-                <button onclick="switchLanguage()">English</button>
+            </div>
+            <div class="credits">
+                <div>All rights reserved</div>
+                <div>© Gal Rothschild 2023</div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="modal-close">&times;</button>
+                    <img src="#" alt="project image">
+                    <h2 class="project-name"></h2>
+                </div>
 
-            </header>
-            <main>
-                <!-- Header of the main content -->
-                <header class="main-header" id="main-header-heb">
-                    <h1>תיק עבודות אישי</h1>
-                    <p> זהו תיק העבודות הראשון שלי!</p>
-                </header>
-                <div class="technologies">
-                    <ul>
-                        <li><img src="./images/technologies/node.png" alt="Node JS"></li>
-                        <li><img src="./images/technologies/react.png" alt="React"></li>
-                        <li><img src="./images/technologies/api.png" alt="API"></li>
-                        <li><img src="./images/technologies/typescript.png" alt="TypeScript"></li>
-                        <li><img src="./images/technologies/es6.png" alt="ES6"></li>
-                        <li><img src="./images/technologies/oop.png" alt="OOP"></li>
-                        <li><img src="./images/technologies/javascript.png" alt="javascript"></li>
-                        <li><img src="./images/technologies/scss.png" alt="scss"></li>
-                        <li><img src="./images/technologies/bootstrap.png" alt="bootstrap"></li>
-                        <li><img src="./images/technologies/css.png" alt="css"></li>
-                        <li><img src="./images/technologies/html.png" alt="html"></li>
-                    </ul>
-                </div>
-                <section class="about" id="about-heb">
-                    <article class="about-me">
-                        <img src="./images/profile.jpg" alt="Profile Picture">
-                        <div>
-                            <h2>קצת עלי</h2>
-                            <p>היי, אני גל, מפתח אתרים מתחיל שלאחרונה סיים את הפרויקט הזה עבור לימודי בהאקריו, הפרויקט
-                                כלל את עמוד הפורטפוליו הזה ובנוסף 6 דפי נחיתה שנבנו בעזרת HTML וCSS.</p>
-                            <p>אני מאוד נהנה לכתוב קוד למרות שזה נעשה קשה לעיתים, במיוחד כשנתקעים על הפרטים הקטנים ולא
-                                יודעים מתי לעצור, אבל אני מתחיל להבין שלא הכל צריך להיות מושלם בסוף.</p>
-                            <p>כרגע אני למדתי HTML, CSS ויש לי נסיון מוקדם בPython וPowershell, אני מאוד מעוניין בללמוד
-                                <span dir="ltr">JS, C#</span> ואולי גם C++ כדי להמשיך ולהגדיל את הידע והכישורים שלי
-                                כמתכנת.
-                            </p>
-                            <p>המטרה ארוכת התווך שלי בתכנות היא לעזור להקים מערכת שבאמת יכולה לעזור לעולם. אני מאמין
-                                שהתחום הזה נותן אפשרויות אין סופיות להתמזג בכל תחום אחר, להתחבר לאנשים מקצועיים בתחומם
-                                ולעזור להם להגיע לעולם החדש של הווב.
-                            </p>
-                            <p>חוץ מתכנות אני נהנה ממשחקי מחשב, בישול ונגינה. כרגע אני עובד בIT כטכנאי תמיכה טכנית, שם
-                                קיבלתי הרבה כלים להתמודדות עם מערכות ווינדוס גדולות בסביבות עבודה של חברה גדולה. זה ידע
-                                שיעזור לי להתבסס בתחילת דרכי כמתכנת ואני מקווה להעצים אותו בעתיד.</p>
-                        </div>
-                    </article>
-                    <article class="cv">
-                        <img src="./images/pdf.png" alt="Logo of PDF">
-                        <div class="cv-inner">
-                            <h2>להורדת קורות חיים</h2>
-                            <p>כאן אתם יכולים להוריד את קורות החיים הנוכחיים שלי.</p>
-                            <a target="_blank" href="./assets/GalRothschildCV.pdf" download>
-                                <button id="download-cv" aria-label="Download CV"> <span>להורדת מסמך PDF</span> <img
-                                        src="./images/icons/cloud-download.png" alt="Download"
-                                        aria-hidden="true"></button>
-                            </a>
-                        </div>
-                    </article>
-                </section>
-                <section class="gallery" id="gallery-heb">
-                    <h2>עבודות נבחרות</h2>
-                    <div class="gallery-cards">
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage1.png" alt="landing page 1">
-                            <h3>מצעו חופשה!</h3>
-                            <p>זהו דף נחיתה של אתר למציאת חופשות, הוא מראה דוגמה טובה לתמונת רקע עם תוכן מוצג מעל.</p>
-                            <div class="button-flex">
-                                <a target="_blank" href="./projects/vacationLandingPage/"><button>למעבר
-                                        לפרוייקט</button></a>
-                                <a
-                                    href="https://github.com/galrothschild/VacationLandingPage/archive/refs/heads/main.zip">
-                                    <button>להורדת הפרוייקט</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage2.png" alt="landing page 2">
-                            <h3>בית קפה</h3>
-                            <p>זה דף נחיתה לבית קפה</p>
-                            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם</p>
-                            <div class="button-flex"><a target="_blank"
-                                    href="./projects/coffeeLandingPage/"><button>למעבר
-                                        לפרוייקט</button></a><a
-                                    href="https://github.com/galrothschild/CoffeeLandingPage/archive/refs/heads/main.zip">
-                                    <button>להורדת הפרוייקט</button>
-                                </a></div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage3.png" alt="landing page 3">
-                            <h3>כאן ועכשיו!</h3>
-                            <p>זה דף נחיתה שמציג באופן יפה גראדיאנט של צבע משתנה.</p>
-                            <div class="button-flex"><a target="_blank"
-                                    href="./projects/hereNowLandingPage/"><button>למעבר
-                                        לפרוייקט</button></a><a
-                                    href="https://github.com/galrothschild/HereNowLandingPage/archive/refs/heads/main.zip">
-                                    <button>להורדת הפרוייקט</button>
-                                </a></div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage4.png" alt="landing page 4">
-                            <h3>תן לנו להוביל אותך קדימה</h3>
-                            <p>זה דף נחיתה שהשתמשתי בו בעיקר בbootstrap בשביל העיצוב והסידור של האלמנטים. היה לי מאוד
-                                קשה לעבור מCSS שבו יש לי שליטה מלאה למצב שבו אני משתמש בדברים מוכנים מראש.</p>
-                            <div class="button-flex"><a target="_blank"
-                                    href="./projects/forwardLandingPage/"><button>למעבר
-                                        לפרוייקט</button></a><a
-                                    href="https://github.com/galrothschild/ForwardLandingPage/archive/refs/heads/main.zip">
-                                    <button>להורדת הפרוייקט</button>
-                                </a></div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage5.png" alt="landing page 5">
-                            <h3>תנו לנו להוביל אותך קדימה</h3>
-                            <p>זה פרויקט שמראה טוב את השימוש בSASS בשביל העיצוב, נורא נהניתי מהאפשרויות הנוספות בSASS
-                                ואני חושב שאמשיך ללמוד עוד מעבר.</p>
-                            <div class="button-flex"><a target="_blank"
-                                    href="./projects/moveForwardLandingPage/"><button>למעבר
-                                        לפרוייקט</button></a><a
-                                    href="https://github.com/galrothschild/MoveForwardLandingPage/archive/refs/heads/main.zip">
-                                    <button>להורדת הפרוייקט</button>
-                                </a></div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/landing pages/landingPage6.png" alt="landing page 6">
-                            <h3>בואו לצ'ייסר!</h3>
-                            <p>זה דף נחיתה נוסף כמו בית הקפה, הוא מראה טוב את השימוש בתמונה ממלאת מקום שהופכת את האתר
-                                ליותר מלא.</p>
-                            <div class="button-flex"><a target="_blank"
-                                    href="./projects/chaserLandingPage/"><button>למעבר
-                                        לפרוייקט</button></a><a
-                                    href="https://github.com/galrothschild/ChaserLandingPage/archive/refs/heads/main.zip">
-                                    <button>להורדת הפרוייקט</button>
-                                </a></div>
-                        </div>
-                    </div>
-                </section>
-                <section class="contact" id="contact-heb">
-                    <h2>צור קשר</h2>
-                    <p>אתם מוזמנים למלא את הטופס הבא ולשלוח לי מייל, אשמח ליצור עמכם קשר.</p>
-                    <form action="mailto:gal.rothschild@kla-tencor.com" method="post">
-                        <div class="form-control">
-                            <label for="fullName">שם</label>
-                            <input type="text" name="fullName" id="fullName" placeholder="שם">
-                        </div>
-                        <div class="form-control">
-                            <label for="email">אימייל</label>
-                            <input type="email" name="email" id="email" placeholder="אימייל">
-                        </div>
-                        <div class="form-control">
-                            <label for="tel">טלפון</label>
-                            <input type="tel" name="tel" id="tel" placeholder="טלפון">
-                        </div>
-                        <div class="form-control">
-                            <label for="">הודעה</label>
-                            <textarea name="message" id="message" placeholder="הודעה"></textarea>
-                        </div>
-                        <button type="submit">שליחה</button>
-                    </form>
-                </section>
-            </main>
-            <footer>
-                <div class="reflinks">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/icons/Facebook.png" alt="Facebook">
-                                    <div class="eng">#Bob</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/gal-rothschild-b9ab39217/">
-                                    <img src="./images/icons/LinkedIn.png" alt="LinkedIn">
-                                    <div class="eng">#Gal Rothschild</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tel:0523309312">
-                                    <img src="./images/icons/Phone number.png" alt="Phone number">
-                                    <div>052-3309312</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://api.whatsapp.com/send?phone=972523309312">
-                                    <img src="./images/icons/Chat.png" alt="Chat">
-                                    <div>052-3309312</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:gal.rothschildf@gmail.com">
-                                    <img src="./images/icons/Email.png" alt="gal.rothschildf@gmail.com">
-                                    <div class="eng">gal.rothschildf<span>@gmail.com</span></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/icons/Location.png" alt="Location">
-                                    <div>עפולה</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="credits">
-                    <div>כל הזכויות שמורות לגל רוטשילד</div>
-                    <div>© Gal Rothschild 2023</div>
-                </div>
-            </footer>
+            </div>
         </div>
     </div>
     <script>
