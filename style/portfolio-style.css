@@ -21,7 +21,7 @@ h3 {
 
 .button-flex {
     white-space: nowrap;
-    gap: 1rem;
+    gap: 3%;
     display: flex;
     flex-direction: column;
     padding: 0 10px;
@@ -248,7 +248,7 @@ h3 {
     margin: 10px;
 }
 
-.card button,
+.modal .button-flex>button,
 .page-header>button {
     background-color: #2ce0ea;
     border-radius: 20px;
@@ -256,16 +256,18 @@ h3 {
     box-shadow: 2px 2px 5px #252525;
     line-height: 2rem;
     padding: 0 20px;
+    cursor: pointer;
 }
 
-.card button:hover,
+.modal .button-flex>button:hover,
 .page-header>button:hover {
     background-color: #26c0c8;
 }
 
-.card button:active,
+.modal .button-flex>button:active,
 .page-header>button:active {
     transform: scale(0.95);
+    box-shadow: 0px 0px 5px #252525;
 }
 
 /* Contact */
@@ -502,4 +504,60 @@ h3 {
 /* Eng side */
 .side-eng>.page-header>.name {
     margin-left: auto;
+}
+
+/* Modal */
+.modal-content {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 50vw;
+    height: 70vh;
+    background-color: rgb(106, 106, 106);
+    z-index: 10;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.modal img {
+    aspect-ratio: 5/3;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0 5px 5px 0;
+}
+
+.modal-close {
+    position: fixed;
+    right: 10px;
+    z-index: 11;
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    align-self: normal;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    background-color: #25252525;
+    backdrop-filter: blur(2px);
+}
+
+.modal-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    background-color: #bebebe;
+    border-radius: 5px 0 0 5px;
 }

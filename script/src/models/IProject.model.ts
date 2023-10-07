@@ -4,4 +4,6 @@ export interface IProject {
     shortDesc: string;
     technologies: string[];
     source: string;
+    github: string;
+
 }
