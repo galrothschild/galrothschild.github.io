@@ -248,7 +248,8 @@ h3 {
     margin: 10px;
 }
 
-.modal .button-flex>button,
+.card button,
+.modal .button-flex button,
 .page-header>button {
     background-color: #2ce0ea;
     border-radius: 20px;
@@ -259,7 +260,8 @@ h3 {
     cursor: pointer;
 }
 
-.modal .button-flex>button:hover,
+.card button,
+.modal .button-flex button:hover,
 .page-header>button:hover {
     background-color: #26c0c8;
 }
@@ -507,6 +509,10 @@ h3 {
 }
 
 /* Modal */
+.modal {
+    display: none;
+}
+
 .modal-content {
     display: flex;
     position: fixed;
