@@ -260,14 +260,11 @@ h3 {
     cursor: pointer;
 }
 
-.card button,
-.modal .button-flex button:hover,
-.page-header>button:hover {
+:is(.card, .modal .button-flex, .page-header) button:hover {
     background-color: #26c0c8;
 }
 
-.modal .button-flex>button:active,
-.page-header>button:active {
+:is(.card, .modal .button-flex, .page-header) button:active {
     transform: scale(0.95);
     box-shadow: 0px 0px 5px #252525;
 }

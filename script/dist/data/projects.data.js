@@ -26,17 +26,17 @@ let project4 = {
     image: "landingPage4.png",
     name: "Forward!",
     shortDesc: "This is a landing page for marketing, it is done using Bootstrap for most elements to showcase my understanding of it.",
-    source: "./projects/moveForwardLandingPage",
+    source: "./projects/forwardLandingPage",
     technologies: ["html", "css", "bootstrap"],
-    github: "https://github.com/galrothschild/moveForwardLandingPage"
+    github: "https://github.com/galrothschild/forwardLandingPage"
 };
 let project5 = {
     image: "landingPage5.png",
     name: "Move Forward",
     shortDesc: "This is a showcase of some sass, and a good example for a background size changing with the screen size.",
-    source: "./projects/hereNowLandingPage",
+    source: "./projects/moveForwardLandingPage",
     technologies: ["html", "css", "sass"],
-    github: "https://github.com/galrothschild/hereNowLandingPage"
+    github: "https://github.com/galrothschild/moveForwardLandingPage"
 };
 let project6 = {
     image: "landingPage6.png",
