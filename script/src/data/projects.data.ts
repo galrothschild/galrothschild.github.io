@@ -3,7 +3,7 @@ import { IProject } from "../models/IProject.model.js";
 let project1: IProject = {
     image: "landingPage1.png",
     name: "Vacation!",
-    shortDesc: "Here you can see a demo landing page for a vacation signup form. It has a good example of a background image with an overlaying form.",
+    shortDesc: `Here you can see a demo landing page for a vacation signup form. It has a good example of a background image with an overlaying form.`,
     source: "./projects/vacationLandingPage",
     technologies: ["html", "css"],
     github: "https://github.com/galrothschild/vacationLandingPage"

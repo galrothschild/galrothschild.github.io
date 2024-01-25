@@ -10,6 +10,7 @@ export function fillModalContent(dataID: string | null): void {
     let projGoto = document.querySelector(".project-goto") as HTMLAnchorElement;
     let projGithub = document.querySelector(".project-github") as HTMLAnchorElement;
     let projImage = document.querySelector(".project-image") as HTMLImageElement;
+    if (window.location.href) project.source.replace("/projects", "");
 
     projName.innerText = project.name;
     projDesc.innerText = project.shortDesc;

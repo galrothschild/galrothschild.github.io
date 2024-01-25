@@ -508,36 +508,45 @@ h3 {
 /* Modal */
 .modal {
     display: none;
+    user-select: none;
 }
 
 .modal-content {
     display: flex;
+    flex-direction: column;
     position: fixed;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    width: 50vw;
+    width: fit-content;
     height: 70vh;
     background-color: rgb(106, 106, 106);
     z-index: 10;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10px;
-
+    box-shadow: 5px 5px 5px hsl(0 0% 0% / 0.4);
 }
 
 .modal img {
     aspect-ratio: 5/3;
-    height: 50%;
+    width: 100%;
+    max-width: 600px;
     object-fit: cover;
+    height: 50%;
     border-radius: 0 5px 5px 0;
 }
 
 .modal-close {
     position: fixed;
+    width: 2rem;
+    line-height: 2rem;
+    color: white;
+    aspect-ratio: 1;
+    border-radius: 5px;
     right: 10px;
     z-index: 11;
-    background-color: transparent;
+    background-color: #2ce0ea;
     border: none;
     font-size: 2.5rem;
     cursor: pointer;
@@ -557,10 +566,12 @@ h3 {
 
 .modal-body {
     padding: 15px;
+    max-width: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50%;
+    height: 100%;
     background-color: #bebebe;
     border-radius: 5px 0 0 5px;
 }
