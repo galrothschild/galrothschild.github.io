@@ -1,7 +1,7 @@
 let project1 = {
     image: "landingPage1.png",
     name: "Vacation!",
-    shortDesc: "Here you can see a demo landing page for a vacation signup form. It has a good example of a background image with an overlaying form.",
+    shortDesc: `Here you can see a demo landing page for a vacation signup form. It has a good example of a background image with an overlaying form.`,
     source: "./projects/vacationLandingPage",
     technologies: ["html", "css"],
     github: "https://github.com/galrothschild/vacationLandingPage"
@@ -46,4 +46,6 @@ let project6 = {
     technologies: ["html", "css", "sass"],
     github: "https://github.com/galrothschild/chaserLandingPage"
 };
-export const projects = [project1, project2, project3, project4, project5, project6];
+export const projectsModuleOne = [project1, project2, project3, project4, project5, project6];
+// let project7: IProject = {
+// };

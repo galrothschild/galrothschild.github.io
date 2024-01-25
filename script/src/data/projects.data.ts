@@ -54,4 +54,8 @@ let project6: IProject = {
     github: "https://github.com/galrothschild/chaserLandingPage"
 };
 
-export const projects: IProject[] = [project1, project2, project3, project4, project5, project6];
+export const projectsModuleOne: IProject[] = [project1, project2, project3, project4, project5, project6];
+
+// let project7: IProject = {
+
+// };
