@@ -120,10 +120,11 @@ h3 {
     list-style: none;
 }
 
-.technologies ul li img {
+.technologies img {
     border-radius: 50%;
     width: 3rem;
     transition: width, 1s;
+    background-color: transparent;
 }
 
 /* About me */
@@ -528,7 +529,7 @@ h3 {
     box-shadow: 5px 5px 5px hsl(0 0% 0% / 0.4);
 }
 
-.modal img {
+.modal .project-image {
     aspect-ratio: 5/3;
     width: 100%;
     max-width: 600px;
@@ -536,6 +537,8 @@ h3 {
     height: 50%;
     border-radius: 0 5px 5px 0;
 }
+
+
 
 .modal-close {
     position: fixed;
@@ -574,4 +577,8 @@ h3 {
     height: 100%;
     background-color: #bebebe;
     border-radius: 5px 0 0 5px;
+}
+
+.modal .technologies>img {
+    zoom: 150%;
 }

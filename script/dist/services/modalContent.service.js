@@ -12,8 +12,17 @@ export function fillModalContent(dataID, moduleNumber) {
     let projGoto = document.querySelector(".project-goto");
     let projGithub = document.querySelector(".project-github");
     let projImage = document.querySelector(".project-image");
+    let projTechnologiesElement = document.querySelector(".project-technologies");
     if (window.location.href)
         project.source.replace("/projects", "");
+    let projTechnologies = document.createElement("div");
+    project.technologies.forEach(technology => {
+        const technologyImg = document.createElement("img");
+        technologyImg.src = `./images/technologies/${technology}.png`;
+        technologyImg.alt = technology;
+        projTechnologies.appendChild(technologyImg);
+    });
+    projTechnologiesElement.innerHTML = projTechnologies.innerHTML;
     projName.innerText = project.name;
     projDesc.innerText = project.shortDesc;
     projDownload.href = project.github + "/archive/refs/heads/main.zip";

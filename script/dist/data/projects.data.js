@@ -52,7 +52,7 @@ const project7 = {
     name: "Colliding Bubbles!",
     shortDesc: "A game where you need to click on bubbles to make them explode.",
     source: "./projects/CollidingBubbles",
-    technologies: ["html", "css", "canvas", "OOP", "Physics", "Javascript"],
+    technologies: ["html", "css", "canvas", "OOP", "Javascript"],
     github: "https://github.com/galrothschild/CollidingBubbles"
 };
 const projectsModuleTwo = [project7];
