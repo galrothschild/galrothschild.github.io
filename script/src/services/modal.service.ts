@@ -11,12 +11,12 @@ export function setModalClosures(): void {
     });
 }
 
-export function setModalOpens(): void {
+export function setModalOpenButtons(): void {
     let modalOpen: NodeListOf<HTMLButtonElement> = document.querySelectorAll(".modal-open");
     let modal = document.querySelector(".modal") as HTMLDivElement;
     modalOpen.forEach((element: HTMLButtonElement) => {
         element.addEventListener("click", function () {
-            fillModalContent(element.getAttribute("data-id"));
+            fillModalContent(element.getAttribute("data-id"), element.getAttribute("data-module"));
             modal.style.display = "block";
         });
     });

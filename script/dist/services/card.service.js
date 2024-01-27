@@ -1,4 +1,4 @@
-const insertCards = (projects, cardsContainerClass) => {
+const insertCards = (projects, cardsContainerClass, module) => {
     console.log(cardsContainerClass);
     const container = document.querySelector(`.${cardsContainerClass}`);
     projects.forEach((project, index) => {
@@ -7,7 +7,7 @@ const insertCards = (projects, cardsContainerClass) => {
                         <img src="./images/landing pages/${project.image}" alt="${project.name}">
                         <h3>${project.name}</h3>
                         <p>${project.shortDesc}</p>
-                        <button class="modal-open" data-id="${index}">Learn More</button>
+                        <button class="modal-open" data-id="${index}" data-module="${module}">Learn More</button>
                     `;
         card.classList.add('card');
         container.appendChild(card);

@@ -9,12 +9,12 @@ export function setModalClosures() {
         });
     });
 }
-export function setModalOpens() {
+export function setModalOpenButtons() {
     let modalOpen = document.querySelectorAll(".modal-open");
     let modal = document.querySelector(".modal");
     modalOpen.forEach((element) => {
         element.addEventListener("click", function () {
-            fillModalContent(element.getAttribute("data-id"));
+            fillModalContent(element.getAttribute("data-id"), element.getAttribute("data-module"));
             modal.style.display = "block";
         });
     });

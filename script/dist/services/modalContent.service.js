@@ -1,8 +1,11 @@
-import { projectsModuleOne } from "../data/projects.data.js";
-export function fillModalContent(dataID) {
+import { projects } from "../data/projects.data.js";
+export function fillModalContent(dataID, moduleNumber) {
     if (dataID === null)
         throw new Error("No Data ID");
-    let project = projectsModuleOne[+dataID];
+    if (dataID === null)
+        throw new Error("No Module ID");
+    const projectArray = projects[Number(moduleNumber)];
+    let project = projectArray[+dataID];
     let projName = document.querySelector(".project-name");
     let projDesc = document.querySelector(".project-description");
     let projDownload = document.querySelector(".project-download");
