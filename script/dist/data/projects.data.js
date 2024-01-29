@@ -82,10 +82,18 @@ const project10 = {
 const project11 = {
     image: "project11.png",
     name: "Pokedex",
-    shortDesc: "An interactive pojedex using PokeAPI",
+    shortDesc: "An interactive pokedex using PokeAPI",
     source: "./projects/pokedex/public",
     technologies: ["html", "css", "Javascript", "api"],
     github: "https://github.com/galrothschild/pokedex"
 };
-const projectsModuleTwo = [project7, project8, project9, project10, project11];
+const project12 = {
+    image: "project12.png",
+    name: "SWAPI Visualization",
+    shortDesc: "An interactive visualization of star wars API using fetch API",
+    source: "./projects/swapiVisualize",
+    technologies: ["html", "css", "Javascript", "api"],
+    github: "https://github.com/galrothschild/swapiVisualization"
+};
+const projectsModuleTwo = [project7, project8, project9, project10, project11, project12];
 export const projects = [projectsModuleOne, projectsModuleTwo];

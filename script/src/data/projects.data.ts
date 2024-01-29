@@ -91,11 +91,19 @@ const project10: IProject = {
 const project11: IProject = {
     image: "project11.png",
     name: "Pokedex",
-    shortDesc: "An interactive pojedex using PokeAPI",
+    shortDesc: "An interactive pokedex using PokeAPI",
     source: "./projects/pokedex/public",
     technologies: ["html", "css", "Javascript", "api"],
     github: "https://github.com/galrothschild/pokedex"
 };
-const projectsModuleTwo: IProject[] = [project7, project8, project9, project10, project11];
+const project12: IProject = {
+    image: "project12.png",
+    name: "SWAPI Visualization",
+    shortDesc: "An interactive visualization of star wars API using fetch API",
+    source: "./projects/swapiVisualize",
+    technologies: ["html", "css", "Javascript", "api"],
+    github: "https://github.com/galrothschild/swapiVisualization"
+};
+const projectsModuleTwo: IProject[] = [project7, project8, project9, project10, project11, project12];
 
 export const projects: Array<IProject[]> = [projectsModuleOne, projectsModuleTwo];
