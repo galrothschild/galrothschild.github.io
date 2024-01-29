@@ -50,10 +50,42 @@ const projectsModuleOne = [project1, project2, project3, project4, project5, pro
 const project7 = {
     image: "project7.png",
     name: "Colliding Bubbles!",
-    shortDesc: "A game where you need to click on bubbles to make them explode.",
+    shortDesc: "A game where you need to click on bubbles to make them explode. Was made using HTML canvas and physics!",
     source: "./projects/CollidingBubbles",
     technologies: ["html", "css", "canvas", "OOP", "Javascript"],
     github: "https://github.com/galrothschild/CollidingBubbles"
 };
-const projectsModuleTwo = [project7];
+const project8 = {
+    image: "project8.png",
+    name: "Rock Paper Scissors",
+    shortDesc: "you battle a bot in rock paper scissors, this was done using local storage",
+    source: "./projects/RockPaperScissors",
+    technologies: ["html", "css", "Javascript"],
+    github: "https://github.com/galrothschild/RockPaperScissors"
+};
+const project9 = {
+    image: "project9.png",
+    name: "Credit Card Validation",
+    shortDesc: "Credit card validation form with a few formatting tricks using regex",
+    source: "./projects/CreditCard",
+    technologies: ["html", "css", "Javascript"],
+    github: "https://github.com/galrothschild/CreditCard"
+};
+const project10 = {
+    image: "project10.png",
+    name: "Rubik's timer",
+    shortDesc: "A rubiks cube timer, used a lot of event listeners and an external service for scramble visualization",
+    source: "./projects/RubiksTimer",
+    technologies: ["html", "css", "Javascript"],
+    github: "https://github.com/galrothschild/RubiksTimer"
+};
+const project11 = {
+    image: "project11.png",
+    name: "Pokedex",
+    shortDesc: "An interactive pojedex using PokeAPI",
+    source: "./projects/pokedex/public",
+    technologies: ["html", "css", "Javascript", "api"],
+    github: "https://github.com/galrothschild/pokedex"
+};
+const projectsModuleTwo = [project7, project8, project9, project10, project11];
 export const projects = [projectsModuleOne, projectsModuleTwo];
