@@ -53,7 +53,7 @@ const project7 = {
     shortDesc: "A game where you need to click on bubbles to make them explode. Was made using HTML canvas and physics!",
     source: "./projects/CollidingBubbles",
     technologies: ["html", "css", "canvas", "OOP", "javascript"],
-    github: "https://github.com/galrothschild/CollidingBubbles"
+    github: "https://github.com/galrothschild/collidingBubbles"
 };
 const project8 = {
     image: "project8.png",
@@ -69,7 +69,7 @@ const project9 = {
     shortDesc: "Credit card validation form with a few formatting tricks using regex",
     source: "./projects/CreditCard",
     technologies: ["html", "css", "javascript"],
-    github: "https://github.com/galrothschild/CreditCard"
+    github: "https://github.com/galrothschild/creditCard"
 };
 const project10 = {
     image: "project10.png",
@@ -77,7 +77,7 @@ const project10 = {
     shortDesc: "A rubiks cube timer, used a lot of event listeners and an external service for scramble visualization",
     source: "./projects/RubiksTimer",
     technologies: ["html", "css", "javascript"],
-    github: "https://github.com/galrothschild/RubiksTimer"
+    github: "https://github.com/galrothschild/rubiksTimer"
 };
 const project11 = {
     image: "project11.png",
