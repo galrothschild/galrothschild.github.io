@@ -15,8 +15,6 @@ export function fillModalContent(dataID, moduleNumber) {
     let projTechnologiesElement = document.querySelector(".project-technologies");
     if (window.location.href.includes("github")) {
         project.source = project.source.replace("./projects", "");
-        console.log(project.source);
-        console.log(window.location.href);
     }
     ;
     let projTechnologies = document.createElement("div");
