@@ -61,7 +61,7 @@ const project7: IProject = {
     name: "Colliding Bubbles!",
     shortDesc: "A game where you need to click on bubbles to make them explode. Was made using HTML canvas and physics!",
     source: "./projects/CollidingBubbles",
-    technologies: ["html", "css", "canvas", "OOP", "Javascript"],
+    technologies: ["html", "css", "canvas", "OOP", "javascript"],
     github: "https://github.com/galrothschild/CollidingBubbles"
 };
 const project8: IProject = {
@@ -69,7 +69,7 @@ const project8: IProject = {
     name: "Rock Paper Scissors",
     shortDesc: "you battle a bot in rock paper scissors, this was done using local storage",
     source: "./projects/RockPaperScissors",
-    technologies: ["html", "css", "Javascript"],
+    technologies: ["html", "css", "javascript"],
     github: "https://github.com/galrothschild/RockPaperScissors"
 };
 const project9: IProject = {
@@ -77,7 +77,7 @@ const project9: IProject = {
     name: "Credit Card Validation",
     shortDesc: "Credit card validation form with a few formatting tricks using regex",
     source: "./projects/CreditCard",
-    technologies: ["html", "css", "Javascript"],
+    technologies: ["html", "css", "javascript"],
     github: "https://github.com/galrothschild/CreditCard"
 };
 const project10: IProject = {
@@ -85,7 +85,7 @@ const project10: IProject = {
     name: "Rubik's timer",
     shortDesc: "A rubiks cube timer, used a lot of event listeners and an external service for scramble visualization",
     source: "./projects/RubiksTimer",
-    technologies: ["html", "css", "Javascript"],
+    technologies: ["html", "css", "javascript"],
     github: "https://github.com/galrothschild/RubiksTimer"
 };
 const project11: IProject = {
@@ -93,7 +93,7 @@ const project11: IProject = {
     name: "Pokedex",
     shortDesc: "An interactive pokedex using PokeAPI",
     source: "./projects/pokedex/public",
-    technologies: ["html", "css", "Javascript", "api"],
+    technologies: ["html", "css", "javascript", "api"],
     github: "https://github.com/galrothschild/pokedex"
 };
 const project12: IProject = {
@@ -101,7 +101,7 @@ const project12: IProject = {
     name: "SWAPI Visualization",
     shortDesc: "An interactive visualization of star wars API using fetch API",
     source: "./projects/swapiVisualize",
-    technologies: ["html", "css", "Javascript", "api"],
+    technologies: ["html", "css", "javascript", "api"],
     github: "https://github.com/galrothschild/swapiVisualization"
 };
 const projectsModuleTwo: IProject[] = [project7, project8, project9, project10, project11, project12];
