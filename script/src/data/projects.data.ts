@@ -60,7 +60,7 @@ const project7: IProject = {
     image: "project7.png",
     name: "Colliding Bubbles!",
     shortDesc: "A game where you need to click on bubbles to make them explode. Was made using HTML canvas and physics!",
-    source: "./projects/CollidingBubbles",
+    source: "./projects/collidingBubbles",
     technologies: ["html", "css", "canvas", "OOP", "javascript"],
     github: "https://github.com/galrothschild/collidingBubbles"
 };
@@ -78,13 +78,13 @@ const project9: IProject = {
     shortDesc: "Credit card validation form with a few formatting tricks using regex",
     source: "./projects/CreditCard",
     technologies: ["html", "css", "javascript"],
-    github: "https://github.com/galrothschild/creditCard"
+    github: "https://github.com/galrothschild/CreditCard"
 };
 const project10: IProject = {
     image: "project10.png",
     name: "Rubik's timer",
     shortDesc: "A rubiks cube timer, used a lot of event listeners and an external service for scramble visualization",
-    source: "./projects/RubiksTimer",
+    source: "./projects/rubiksTimer",
     technologies: ["html", "css", "javascript"],
     github: "https://github.com/galrothschild/rubiksTimer"
 };
@@ -100,9 +100,9 @@ const project12: IProject = {
     image: "project12.png",
     name: "SWAPI Visualization",
     shortDesc: "An interactive visualization of star wars API using fetch API",
-    source: "./projects/swapiVisualize",
+    source: "./projects/SWAPIVisualize",
     technologies: ["html", "css", "javascript", "api"],
-    github: "https://github.com/galrothschild/swapiVisualization"
+    github: "https://github.com/galrothschild/SWAPIVisualize"
 };
 const projectsModuleTwo: IProject[] = [project7, project8, project9, project10, project11, project12];
 
