@@ -1,5 +1,4 @@
 const insertCards = (projects, cardsContainerClass, module) => {
-    console.log(cardsContainerClass);
     const container = document.querySelector(`.${cardsContainerClass}`);
     projects.forEach((project, index) => {
         let card = document.createElement('div');

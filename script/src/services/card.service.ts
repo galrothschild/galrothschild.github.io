@@ -1,7 +1,6 @@
 import { IProject } from "../models/IProject.model.js";
 
 const insertCards = (projects: Array<IProject>, cardsContainerClass: string, module: number): void => {
-    console.log(cardsContainerClass);
     const container = document.querySelector(`.${cardsContainerClass}`) as HTMLDivElement;
     projects.forEach((project, index: number) => {
         let card: HTMLDivElement = document.createElement('div');

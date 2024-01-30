@@ -14,7 +14,7 @@ export function fillModalContent(dataID: string | null, moduleNumber: string | n
     let projImage = document.querySelector(".project-image") as HTMLImageElement;
     let projTechnologiesElement = document.querySelector(".project-technologies") as HTMLDivElement;
     if (window.location.href.includes("github")) {
-        project.source.replace("/projects", "");
+        project.source.replace("./projects", "");
         console.log(project.source);
         console.log(window.location.href);
     };
