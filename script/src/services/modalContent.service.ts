@@ -13,7 +13,11 @@ export function fillModalContent(dataID: string | null, moduleNumber: string | n
     let projGithub = document.querySelector(".project-github") as HTMLAnchorElement;
     let projImage = document.querySelector(".project-image") as HTMLImageElement;
     let projTechnologiesElement = document.querySelector(".project-technologies") as HTMLDivElement;
-    if (window.location.href.includes("github")) project.source.replace("/projects", "");
+    if (window.location.href.includes("github")) {
+        project.source.replace("/projects", "");
+        console.log(project.source);
+        console.log(window.location.href);
+    };
     let projTechnologies = document.createElement("div");
     project.technologies.forEach(technology => {
         const technologyImg = document.createElement("img");
