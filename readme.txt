@@ -21,8 +21,14 @@ CSS
 Bootstrap (for some layout and styling)
 Sass (for some additional styling)
 
-Credits
-The site was designed and developed by [Your Name].
+In the second half of this portfolio I have added 6 new projects that incorporate javascript.
+
+Project 7: A game I built using HTML Canvas and physics, you need to click the bubbles to pop them, the smaller they are, the more points you get. I also utilized sprite sheets which was a great challenge.
+Project 8: Rock Paper Scissors, a classic game against a randomized robot
+Project 9: Credit Card Validation form, using regex and a lot of event listeners.
+Project 10: Rubik's timer, a timer with a scramble generator, and editable entries
+project 11: Pokedex, as the name implies, it's a pokedex, using pokeAPI to render an image and the name of the pokemons
+project 12: SWAPI Visualization, visualized the characters in Star wars API (SWAPI), and a neat loading bar.
 
 
-
+The site was designed and developed by Gal Rothschild.
