@@ -1,0 +1,3 @@
+[submodule "projects/ReactBusinessCard"]
+	path = projects/ReactBusinessCard
+	url = https://github.com/galrothschild/ReactBusinessCard/
