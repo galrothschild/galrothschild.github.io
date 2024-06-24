@@ -134,9 +134,9 @@ const project13: IProject = {
 	image: "project13.png",
 	name: "Business Card App",
 	shortDesc: "A business card app made with React",
-	source: "./projects/weatherApp",
+	source: "./projects/ReactBusinessCard",
 	technologies: ["html", "css", "typescript", "api", "react"],
-	github: "https://galrothschild.github.io/ReactBusinessCard/",
+	github: "https://github.com/galrothschild/ReactBusinessCard/",
 };
 
 const projectsModuleThree: IProject[] = [project13];

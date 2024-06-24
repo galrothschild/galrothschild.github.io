@@ -114,9 +114,9 @@ const project13 = {
     image: "project13.png",
     name: "Business Card App",
     shortDesc: "A business card app made with React",
-    source: "./projects/weatherApp",
+    source: "./projects/ReactBusinessCard",
     technologies: ["html", "css", "typescript", "api", "react"],
-    github: "https://galrothschild.github.io/ReactBusinessCard/",
+    github: "https://github.com/galrothschild/ReactBusinessCard/",
 };
 const projectsModuleThree = [project13];
 export const projects = [
